@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+    background-size: 600% 600%;
+    animation: bgGerak 10s ease infinite;
+}
+
+@keyframes bgGerak {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo img {
+    width: 45px;
+    border-radius: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: cyan;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* LIST */
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    width: 95%;
+    max-width: 500px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    border: 1px solid cyan;
+    overflow: hidden;
+    box-shadow: 0 0 10px cyan;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content h2 {
+    margin-bottom: 5px;
+}
+
+.harga {
+    color: cyan;
+    margin-bottom: 8px;
+}
+
+.deskripsi {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.beli {
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 💻 KOMPUTER */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1300px;
+    }
+
+    .card {
+        max-width: 900px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .deskripsi {
+        font-size: 16px;
+    }
+}
